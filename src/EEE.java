@@ -1,11 +1,8 @@
 public class EEE {
     public static void main(String[] args) {
-        String str = null;
-        try{
-            str.length();
-        }catch (NullPointerException e){
-            System.out.println("エラー"+e.getMessage());
-        }
+        String str = "百二十三";
+
+        System.out.println(Integer.parseInt(str));
 
     }
 }
