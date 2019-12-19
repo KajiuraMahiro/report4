@@ -1,7 +1,11 @@
 public class EEE {
     public static void main(String[] args) {
         String str = null;
-        System.out.println(str.length());
+        try{
+            str.length();
+        }catch (NullPointerException e){
+            System.out.println("エラー"+e.getMessage());
+        }
 
     }
 }
